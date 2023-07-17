@@ -83,8 +83,9 @@
   width: 80%; /* Adjust the width to 80% */
   min-height: 100vh;
   display: block;
-  z-index: 98;
-  background-color: var(--light);
+  z-index: -1;
+  background-color: var(--musk-green);
+  opacity: 1;
   padding-top: 120px;
   transition: 0.4s;
   transform: translateX(100%); /* Add initial translation to start from right */
@@ -182,14 +183,14 @@ header.is-scrolling .container {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-main section.banner {
+.banner {
   color: #fff;
   position: relative;
-  padding-left: 4rem;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 2rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -197,7 +198,7 @@ main section.banner {
   background-position: top right;
   background-size: cover;
 }
-main section.banner:after {
+.banner:after {
   content: "";
   display: block;
   position: absolute;
@@ -248,13 +249,13 @@ main section.banner .container h3 {
   font-size: 4rem;
   margin-top: 2rem;
 }
-.about-us-content-title{
+.about-us-content-title {
   color: white;
   font-size: 3rem;
   line-height: 1.2;
-  padding-bottom:1rem;
+  padding-bottom: 1rem;
 }
-.about-us-content-txt{
+.about-us-content-txt {
   color: white;
   font-size: 1.2rem;
   text-align: justify;
@@ -280,9 +281,18 @@ main section.banner .container h3 {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
 }
+
+/* BENEFICIOS */
+
 .benefits {
   padding-top: 64px;
   padding-bottom: 64px;
+}
+.benefits-title {
+  color: var(--teal);
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 .benefits-grid {
   display: -ms-grid;
@@ -295,9 +305,10 @@ main section.banner .container h3 {
   background-image: url("../images/project-img.jpg");
   border-radius: 16px;
   overflow: hidden;
+  opacity: 0.8;
 }
 .benefit-content {
-  opacity: 0.6;
+  opacity: 0.8;
   color: #fff;
   padding: 16px;
   background-color: var(--light-green);
@@ -318,10 +329,13 @@ main section.banner .container h3 {
 .center {
   text-align: center;
 }
-.ver-catalogo-btn{
-  margin-top:2rem;
+.ver-catalogo-btn {
+  margin-top: 2rem;
   padding: 1.5rem 3rem;
 }
+
+/* CONTACTO */
+
 .contact {
   background-color: var(--teal);
 }
@@ -330,7 +344,7 @@ main section.banner .container h3 {
   font-size: 4rem;
   margin-top: 2rem;
 }
-.contact-txt{
+.contact-txt {
   color: white;
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -339,7 +353,12 @@ main section.banner .container h3 {
   padding-top: 64px;
   padding-bottom: 64px;
 }
-
+.contact-btn {
+  border: white solid 1px;
+}
+.contact-btn:hover {
+  border: transparent solid 1px;
+}
 .container form {
   display: block;
   margin: 0 auto;
@@ -387,96 +406,74 @@ main section.banner .container h3 {
 .form-area {
   grid-column: 1/-1;
 }
-.right-align {
+.btn-align {
   text-align: right;
 }
-@media (max-width: 767px) {
-  .hide-mob {
-    display: none;
-  }
-}
 
-@media (max-width: 1024px) {
-  .header {
-    padding-left: 24px;
-    padding-right: 44px;
-  }
+/* FOOTER */
+
+.footer {
+  background-color: var(--grass-green);
 }
-@media (max-width: 767px) {
-  .header {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+.footer-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-@media (min-width: 865px) {
-  .mobile-nav {
-    display: none;
-  }
-  .hamburger {
-    display: none;
-  }
+.footer-img {
+  width: 9rem;
+  content: url(../assets/images/Ezenziala_Imagotipo_rgb-03.png);
+  transition: 700ms ease-in-out;
 }
-@media (max-width: 767px) {
-  .button {
-    font-size: 18px;
-  }
+.footer-img:hover {
+  content: url(../assets/images/Ezenziala_Imagotipo_rgb-03-hover.png);
 }
-@media (max-width: 767px) {
-  header .container nav {
-    display: none;
-  }
+.social-media-txt {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  letter-spacing: 1.5px;
 }
-@media (max-width: 767px) {
-  .main-title {
-    font-size: 3rem;
-    line-height: 3rem;
-  }
+.social-media-icons {
+  display: flex;
 }
-@media (max-width: 767px) {
-  main section.banner .container h3 {
-    font-size: 20px;
-  }
+.fa-instagram {
+  color: white !important;
+  transition: 250ms ease-in-out !important;
 }
-@media (max-width: 1024px) {
-  main .about-us .container .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.fa-square-facebook {
+  color: white !important;
+  transition: 250ms ease-in-out !important;
 }
-@media (max-width: 767px) {
-  main .about-us .container .services-grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
+.social-icon {
+  margin: 2rem;
 }
-@media (max-width: 865px) {
-  .desktop-nav {
-    display: none;
-  }
-  main section.banner {
-    padding-left: 1rem;
-  }
+.footer-nav {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
 }
-@media (max-width: 767px) {
-  main .projects .projects-grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
+.footer-nav-link {
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
 }
-@media (max-width: 1024px) {
-  main .projects .projects-grid .project .content h3 {
-    font-size: 28px;
-  }
+.footer-nav-link:hover {
+  color: var(--musk-green);
 }
-@media (max-width: 1024px) {
-  main .projects .projects-grid .project .content p {
-    font-size: 16px;
-  }
+.fa-instagram:hover {
+  color: var(--musk-green) !important;
 }
-@media (max-width: 767px) {
-  main .contact .container form .form-grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
+.fa-square-facebook:hover {
+  color: var(--musk-green) !important;
 }
 
 /* TIENDA CSS */
@@ -514,7 +511,13 @@ main section.banner .container h3 {
   background-color: var(--light);
   opacity: 0.5;
 }
-
+.products-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+  margin: 5rem 3rem;
+}
 .product {
   background-color: #fff;
   max-width: 100%;
@@ -533,4 +536,149 @@ main section.banner .container h3 {
 }
 .product .content {
   padding: 16px;
+}
+
+/* RESPONSIVE QUERIES */
+
+@media (max-width: 1124px) {
+  .img-about-us {
+    border-radius: 50px;
+    max-width: 35rem;
+  }
+}
+@media (max-width: 1024px) {
+  .benefit-content h3 {
+    font-size: 28px;
+  }
+  .benefit-content p {
+    font-size: 16px;
+  }
+  main .about-us .container .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-us-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    padding-left: 24px;
+    padding-right: 44px;
+  }
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+    z-index: 99;
+  }
+}
+@media (max-width: 865px) {
+  .desktop-nav {
+    display: none;
+  }
+  main section.banner {
+    padding-left: 1rem;
+  }
+  .about-us-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .hamburger {
+    display: block;
+  }
+  .benefits-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .hide-mob {
+    display: none;
+  }
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .button {
+    font-size: 18px;
+  }
+  .about-us-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-about-us {
+    max-width: 25rem;
+  }
+  header .container nav {
+    display: none;
+  }
+  .main-title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  main section.banner .container h3 {
+    font-size: 20px;
+  }
+  main .contact .container form .form-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .footer-img {
+    width: 5rem;
+  }
+  .social-icon {
+    margin: 2rem 1rem;
+  }
+  .products-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .img-about-us {
+    max-width: 20rem;
+  }
+  .about-us-title {
+    font-size: 3rem;
+  }
+  .about-us-content-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .contact-title {
+    font-size: 3rem;
+  }
+  .benefits-title {
+    font-size: 3rem;
+  }
+  .form-grid {
+    margin: 0rem 2rem;
+  }
+  .btn-align {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .footer-nav-link {
+    font-size: 1rem;
+  }
+  .social-media-txt {
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+@media (max-width: 420px) {
+  .img-about-us {
+    max-width: 16rem;
+    margin: 0;
+  }
+}
+@media (max-width: 320px) {
+  .img-about-us {
+    max-width: 12rem;
+    margin: 0;
+  }
 }

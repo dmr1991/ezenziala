@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EZENZIALA</title>
-
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header>
       <div class="header">
-        <a href="#"
+        <a href="index.html"
           ><img
             class="header-logo"
-            src="assets/images/full-logo-noslogan.png"
+            src="assets/images/Ezenziala_Imagotipo_rgb-08.png"
             alt=""
         /></a>
         <nav class="desktop-nav">
@@ -32,14 +35,14 @@
           <div class="bar"></div>
         </button>
       </div>
+      <nav class="mobile-nav">
+        <a href="#">Home</a>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Catálogo</a>
+        <a href="#">Tienda</a>
+        <a href="#">Contact</a>
+      </nav>
     </header>
-    <nav class="mobile-nav">
-      <a href="#">Home</a>
-      <a href="#">Sobre nosotros</a>
-      <a href="#">Catálogo</a>
-      <a href="#">Tienda</a>
-      <a href="#">Contact</a>
-    </nav>
     <main>
       <section class="banner">
         <div class="container">
@@ -52,23 +55,14 @@
           <a href="#" class="button">Conocer más</a>
         </div>
       </section>
-
-      <section id="services" class="services">
+      <section id="aboutus" class="about-us">
         <div class="container">
-          <h2>Services</h2>
-
-          <div class="services-grid">
-            <div class="service">
-              <figure class="img-box">
-                <img
-                  src="./assets/images/service-1.jpg"
-                  alt="Website Service"
-                  class="img"
-                />
-              </figure>
+          <h2 class="about-us-title">Sobre nosotros</h2>
+          <div class="about-us-grid">
+            <div class="about-us-content">
               <div class="content">
-                <h3>Websites</h3>
-                <p>
+                <h3 class="about-us-content-title">Productos Naturales</h3>
+                <p class="about-us-content-txt">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Officiis beatae, cumque mollitia laudantium fugiat
                   perspiciatis saepe. Delectus praesentium numquam quas?
@@ -76,153 +70,105 @@
               </div>
             </div>
 
-            <div class="service">
-              <figure class="img-box">
-                <img
-                  src="./assets/images/service-2.jpg"
-                  alt="App Service"
-                  class="img"
-                />
-              </figure>
-              <div class="content">
-                <h3>Apps</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Officiis beatae, cumque mollitia laudantium fugiat
-                  perspiciatis saepe. Delectus praesentium numquam quas?
-                </p>
-              </div>
-            </div>
-
-            <div class="service">
-              <figure class="img-box">
-                <img
-                  src="./assets/images/service-3.jpg"
-                  alt="Games Service"
-                  class="img"
-                />
-              </figure>
-              <div class="content">
-                <h3>Games</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Officiis beatae, cumque mollitia laudantium fugiat
-                  perspiciatis saepe. Delectus praesentium numquam quas?
-                </p>
-              </div>
-            </div>
-
-            <div class="service">
-              <figure class="img-box">
-                <img
-                  src="./assets/images/service-4.jpg"
-                  alt="Mentoring Service"
-                  class="img"
-                />
-              </figure>
-              <div class="content">
-                <h3>Mentoring</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Officiis beatae, cumque mollitia laudantium fugiat
-                  perspiciatis saepe. Delectus praesentium numquam quas?
-                </p>
-              </div>
-            </div>
+            <figure class="img-about-us">
+              <img
+                src="assets/images/aceite-gotero.jpg"
+                alt="Website Service"
+                class="img"
+              />
+            </figure>
           </div>
         </div>
       </section>
-
-      <section class="projects" id="projects">
+      <section class="benefits" id="benefits">
         <div class="container">
-          <h2>Projects</h2>
-
-          <div class="projects-grid">
-            <div class="project">
-              <div class="content">
-                <h3>Project 1</h3>
+          <h2 class="benefits-title">Beneficios</h2>
+          <div class="benefits-grid">
+            <div class="benefit">
+              <div class="benefit-content">
+                <h3>Lavanda</h3>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Dolores, mollitia voluptas dolore reprehenderit nulla
                   consectetur ipsa accusantium facilis! Cumque, voluptate!
                 </p>
-                <a href="#" class="button">Learn more</a>
+                <a href="#" class="button">Ver más</a>
               </div>
             </div>
-            <div class="project">
-              <div class="content">
-                <h3>Project 2</h3>
+            <div class="benefit">
+              <div class="benefit-content">
+                <h3>Cedro</h3>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Dolores, mollitia voluptas dolore reprehenderit nulla
                   consectetur ipsa accusantium facilis! Cumque, voluptate!
                 </p>
-                <a href="#" class="button">Learn more</a>
+                <a href="#" class="button">Ver más</a>
               </div>
             </div>
-            <div class="project">
-              <div class="content">
-                <h3>Project 3</h3>
+            <div class="benefit">
+              <div class="benefit-content">
+                <h3>Eucalipto</h3>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Dolores, mollitia voluptas dolore reprehenderit nulla
                   consectetur ipsa accusantium facilis! Cumque, voluptate!
                 </p>
-                <a href="#" class="button">Learn more</a>
+                <a href="#" class="button">Ver más</a>
               </div>
             </div>
-            <div class="project">
-              <div class="content">
-                <h3>Project 4</h3>
+            <div class="benefit">
+              <div class="benefit-content">
+                <h3>Menta Piperita</h3>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Dolores, mollitia voluptas dolore reprehenderit nulla
                   consectetur ipsa accusantium facilis! Cumque, voluptate!
                 </p>
-                <a href="#" class="button">Learn more</a>
+                <a href="#" class="button">Ver más</a>
               </div>
             </div>
-            <div class="project">
-              <div class="content">
-                <h3>Project 5</h3>
+            <div class="benefit">
+              <div class="benefit-content">
+                <h3>Naranja</h3>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Dolores, mollitia voluptas dolore reprehenderit nulla
                   consectetur ipsa accusantium facilis! Cumque, voluptate!
                 </p>
-                <a href="#" class="button">Learn more</a>
+                <a href="#" class="button">Ver más</a>
               </div>
             </div>
-            <div class="project">
-              <div class="content">
-                <h3>Project 6</h3>
+            <div class="benefit">
+              <div class="benefit-content">
+                <h3>Bergamota</h3>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Dolores, mollitia voluptas dolore reprehenderit nulla
                   consectetur ipsa accusantium facilis! Cumque, voluptate!
                 </p>
-                <a href="#" class="button">Learn more</a>
+                <a href="#" class="button">Ver más</a>
               </div>
             </div>
           </div>
-
           <div class="center">
-            <a href="#" class="button">View more</a>
+            <a href="#" class="button ver-catalogo-btn">Ver Catálogo</a>
           </div>
         </div>
       </section>
-
       <section class="contact" id="contact">
         <div class="container">
-          <h2>Contact</h2>
-
+          <h2 class="contact-title">Contacto</h2>
+          <p class="contact-txt center">
+            Contáctanos para asesorías personalizadas
+          </p>
           <form>
             <div class="form-grid">
               <input
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Name"
+                placeholder="Nombre"
                 class="form-element"
               />
               <input
@@ -235,17 +181,52 @@
               <textarea
                 name="message"
                 id="message"
-                placeholder="Messsage"
+                placeholder="Mensaje"
                 class="form-area"
               ></textarea>
             </div>
-            <div class="right-align">
-              <input type="submit" value="Send message" class="button" />
+            <div class="btn-align">
+              <input
+                type="submit"
+                value="Enviar mensaje"
+                class="button contact-btn"
+              />
             </div>
           </form>
         </div>
       </section>
+      <section class="footer" id="footer">
+        <div class="footer-container">
+          <img
+            class="footer-img"
+            src="assets/images/Ezenziala_Imagotipo_rgb-03.png"
+            alt=""
+          />
+          <div class="social-media-footer">
+            <h3 class="social-media-txt">Síguenos</h3>
+            <div class="social-media-icons">
+              <a href="#"
+                ><i class="fa-brands fa-instagram fa-2xl social-icon"></i
+              ></a>
+
+              <a href="#"
+                ><i
+                  class="fa-brands fa-square-facebook fa-2xl social-icon"
+                  
+                ></i
+              ></a>
+            </div>
+          </div>
+          <nav class="footer-nav">
+            <a href="#" class="footer-nav-link">Home</a>
+            <a href="#" class="footer-nav-link">Sobre nosotros</a>
+            <a href="#" class="footer-nav-link">Catálogo</a>
+            <a href="#" class="footer-nav-link">Tienda</a>
+            <a href="#" class="footer-nav-link">Contacto</a>
+          </nav>
+        </div>
+      </section>
     </main>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
